@@ -1,4 +1,7 @@
-# api documentation for  [systemjs (v0.20.12)](https://github.com/systemjs/systemjs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-systemjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-systemjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-systemjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-systemjs)
+# npmdoc-systemjs
+
+#### basic api documentation for  [systemjs (v0.20.12)](https://github.com/systemjs/systemjs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-systemjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-systemjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-systemjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-systemjs)
+
 #### Dynamic ES module loader
 
 [![NPM](https://nodei.co/npm/systemjs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/systemjs)
@@ -84,7 +87,8 @@
         "test:traceur": "mocha test/test-traceur.js -u tdd --reporter dot",
         "test:typescript": "mocha test/test-typescript.js -u tdd --reporter dot"
     },
-    "version": "0.20.12"
+    "version": "0.20.12",
+    "bin": {}
 }
 ```
 
