@@ -71,15 +71,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.systemjs._nodeRequire.resolve">
-            function <span class="apidocSignatureSpan">systemjs.</span>_nodeRequire.resolve
-            <span class="apidocSignatureSpan">(request)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.systemjs.amdDefine">
             function <span class="apidocSignatureSpan">systemjs.</span>amdDefine
             <span class="apidocSignatureSpan">(name, deps, factory)</span>
@@ -92,15 +83,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.systemjs.amdRequire">
             function <span class="apidocSignatureSpan">systemjs.</span>amdRequire
             <span class="apidocSignatureSpan">(names, callback, errback, referer)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.systemjs.registry.delete">
-            function <span class="apidocSignatureSpan">systemjs.</span>registry.delete
-            <span class="apidocSignatureSpan">(key)</span>
             </a>
 
         </li>
@@ -175,51 +157,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.systemjs._nodeRequire.resolve">module systemjs._nodeRequire.resolve</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.systemjs._nodeRequire.resolve.resolve">
-            function <span class="apidocSignatureSpan">systemjs._nodeRequire.</span>resolve
-            <span class="apidocSignatureSpan">(request)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.systemjs.amdDefine">module systemjs.amdDefine</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.systemjs.amdDefine.amdDefine">
-            function <span class="apidocSignatureSpan">systemjs.</span>amdDefine
-            <span class="apidocSignatureSpan">(name, deps, factory)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">systemjs.amdDefine.</span>amd</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.systemjs.amdRequire">module systemjs.amdRequire</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.systemjs.amdRequire.amdRequire">
-            function <span class="apidocSignatureSpan">systemjs.</span>amdRequire
-            <span class="apidocSignatureSpan">(names, callback, errback, referer)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.systemjs.registry">module systemjs.registry</a><ol>
 
         <li>
@@ -234,19 +171,6 @@
         <li>
 
             <span class="apidocSignatureSpan">symbol <span class="apidocSignatureSpan">systemjs.registry.</span>_registry</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.systemjs.registry.delete">module systemjs.registry.delete</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.systemjs.registry.delete.delete">
-            function <span class="apidocSignatureSpan">systemjs.registry.</span>delete
-            <span class="apidocSignatureSpan">(key)</span>
-            </a>
 
         </li>
 
@@ -274,21 +198,6 @@
   } finally {
     exports.requireDepth -= 1;
   }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.systemjs._nodeRequire.resolve" id="apidoc.element.systemjs._nodeRequire.resolve">
-        function <span class="apidocSignatureSpan">systemjs.</span>_nodeRequire.resolve
-        <span class="apidocSignatureSpan">(request)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function resolve(request) {
-  return Module._resolveFilename(request, self);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -457,27 +366,6 @@
 
 
 
-    <h2>
-        <a href="#apidoc.element.systemjs.registry.delete" id="apidoc.element.systemjs.registry.delete">
-        function <span class="apidocSignatureSpan">systemjs.</span>registry.delete
-        <span class="apidocSignatureSpan">(key)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">registry.delete = function (key) {
-  var deleted = registryDelete.call(this, key);
-
-  // also delete from register registry if linked
-  if (records.hasOwnProperty(key) &amp;&amp; !records[key].linkRecord)
-    delete records[key];
-
-  return deleted;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
 
 
 
@@ -539,200 +427,6 @@
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.systemjs._nodeRequire.resolve" id="apidoc.module.systemjs._nodeRequire.resolve">module systemjs._nodeRequire.resolve</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.systemjs._nodeRequire.resolve.resolve" id="apidoc.element.systemjs._nodeRequire.resolve.resolve">
-        function <span class="apidocSignatureSpan">systemjs._nodeRequire.</span>resolve
-        <span class="apidocSignatureSpan">(request)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function resolve(request) {
-  return Module._resolveFilename(request, self);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.systemjs.amdDefine" id="apidoc.module.systemjs.amdDefine">module systemjs.amdDefine</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.systemjs.amdDefine.amdDefine" id="apidoc.element.systemjs.amdDefine.amdDefine">
-        function <span class="apidocSignatureSpan">systemjs.</span>amdDefine
-        <span class="apidocSignatureSpan">(name, deps, factory)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function define(name, deps, factory) {
-  if (typeof name !== 'string') {
-    factory = deps;
-    deps = name;
-    name = null;
-  }
-
-  if (!(deps instanceof Array)) {
-    factory = deps;
-    deps = ['require', 'exports', 'module'].splice(0, factory.length);
-  }
-
-  if (typeof factory !== 'function')
-    factory = (function (factory) {
-      return function() { return factory; }
-    })(factory);
-
-  if (!name) {
-    if (curMetaDeps) {
-      deps = deps.concat(curMetaDeps);
-      curMetaDeps = undefined;
-    }
-  }
-
-  // remove system dependencies
-  var requireIndex, exportsIndex, moduleIndex;
-
-  if ((requireIndex = deps.indexOf('require')) !== -1) {
-
-    deps.splice(requireIndex, 1);
-
-    // only trace cjs requires for non-named
-    // named defines assume the trace has already been done
-    if (!name)
-      deps = deps.concat(amdGetCJSDeps(factory.toString(), requireIndex));
-  }
-
-  if ((exportsIndex = deps.indexOf('exports')) !== -1)
-    deps.splice(exportsIndex, 1);
-
-  if ((moduleIndex = deps.indexOf('module')) !== -1)
-    deps.splice(moduleIndex, 1);
-
-  function execute (req, exports, module) {
-    var depValues = [];
-    for (var i = 0; i &lt; deps.length; i++)
-      depValues.push(req(deps[i]));
-
-    module.uri = module.id;
-
-    module.config = noop;
-
-    // add back in system dependencies
-    if (moduleIndex !== -1)
-      depValues.splice(moduleIndex, 0, module);
-
-    if (exportsIndex !== -1)
-      depValues.splice(exportsIndex, 0, exports);
-
-    if (requireIndex !== -1) {
-      var contextualRequire = function (names, callback, errback) {
-        if (typeof names === 'string' &amp;&amp; typeof callback !== 'function')
-          return req(names);
-        return require.call(loader, names, callback, errback, module.id);
-      };
-      contextualRequire.toUrl = function (name) {
-        return loader.normalizeSync(name, module.id);
-      };
-      depValues.splice(requireIndex, 0, contextualRequire);
-    }
-
-    // set global require to AMD require
-    var curRequire = envGlobal.require;
-    envGlobal.require = require;
-
-    var output = factory.apply(exportsIndex === -1 ? envGlobal : exports, depValues);
-
-    envGlobal.require = curRequire;
-
-    if (typeof output !== 'undefined')
-      module.exports = output;
-  }
-
-  // anonymous define
-  if (!name) {
-    loader.registerDynamic(deps, false, curEsModule ? wrapEsModuleExecute(execute) : execute);
-  }
-  else {
-    loader.registerDynamic(name, deps, false, execute);
-
-    // if we don't have any other defines,
-    // then let this be an anonymous define
-    // this is just to support single modules of the form:
-    // define('jquery')
-    // still loading anonymously
-    // because it is done widely enough to be useful
-    // as soon as there is more than one define, this gets removed though
-    if (lastNamedDefine) {
-      lastNamedDefine = undefined;
-      multipleNamedDefines = true;
-    }
-    else if (!multipleNamedDefines) {
-      lastNamedDefine = [deps, execute];
-    }
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.systemjs.amdRequire" id="apidoc.module.systemjs.amdRequire">module systemjs.amdRequire</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.systemjs.amdRequire.amdRequire" id="apidoc.element.systemjs.amdRequire.amdRequire">
-        function <span class="apidocSignatureSpan">systemjs.</span>amdRequire
-        <span class="apidocSignatureSpan">(names, callback, errback, referer)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function require(names, callback, errback, referer) {
-  // in amd, first arg can be a config object... we just ignore
-  if (typeof names === 'object' &amp;&amp; !(names instanceof Array))
-    return require.apply(null, Array.prototype.splice.call(arguments, 1, arguments.length - 1));
-
-  // amd require
-  if (typeof names === 'string' &amp;&amp; typeof callback === 'function')
-    names = [names];
-  if (names instanceof Array) {
-    var dynamicRequires = [];
-    for (var i = 0; i &lt; names.length; i++)
-      dynamicRequires.push(loader.import(names[i], referer));
-    Promise.all(dynamicRequires).then(function (modules) {
-      for (var i = 0; i &lt; modules.length; i++)
-        modules[i] = modules[i].__useDefault ? modules[i].default : modules[i];
-      if (callback)
-        callback.apply(null, modules);
-    }, errback);
-  }
-
-  // commonjs require
-  else if (typeof names === 'string') {
-    var normalized = loader.decanonicalize(names, referer);
-    var module = loader.get(normalized);
-    if (!module)
-      throw new Error('Module not already loaded loading "' + names + '" as ' + normalized + (referer ? ' from "' + referer + '".' : '.'));
-    return module.__useDefault ? module.default : module;
-  }
-
-  else
-    throw new TypeError('Invalid require');
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.systemjs.registry" id="apidoc.module.systemjs.registry">module systemjs.registry</a></h1>
 
 
@@ -756,32 +450,6 @@
     </ul>
 
 
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.systemjs.registry.delete" id="apidoc.module.systemjs.registry.delete">module systemjs.registry.delete</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.systemjs.registry.delete.delete" id="apidoc.element.systemjs.registry.delete.delete">
-        function <span class="apidocSignatureSpan">systemjs.registry.</span>delete
-        <span class="apidocSignatureSpan">(key)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">delete = function (key) {
-  var deleted = registryDelete.call(this, key);
-
-  // also delete from register registry if linked
-  if (records.hasOwnProperty(key) &amp;&amp; !records[key].linkRecord)
-    delete records[key];
-
-  return deleted;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
 
 
 </div>
